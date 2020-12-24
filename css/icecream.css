@@ -1,0 +1,159 @@
+@import url(mediaQuery.css);
+/*중앙컨텐츠*/
+/*기본설정*/
+#contWrap{width:100%; height:auto;}
+#contWrap::after{content:""; clear:both; display:block;}
+/*기본설정*/
+
+/*메인 타이틀*/
+#contWrap>#main_title{width:100%; padding:4% 0; text-align:center; font-family: 'Bree Serif', serif; font-size:2.1rem; color:#651d32;}
+#contWrap>#main_title>span{font-family: 'Nanum Gothic', sans-serif; font-size:1.8rem; margin-left:0.5%;}
+/*메인 타이틀*/
+
+#contWrap>#best_ice{width:90%;  margin:0 auto;}
+#contWrap>#best_ice>ul{width:100%; padding:5% 0 10%;}
+#contWrap>#best_ice>ul>li{width:14.28571428571429%; position:relative; text-align:center;}
+#contWrap>#best_ice>ul>li>a{width:90%; height:90%; display:block; margin:0 auto;}
+
+/*Best icecream*/
+#contWrap>#best_ice>ul>li>a>div:first-child{position:absolute; top:-18%; left:50%; transform:translateX(-50%); width:27%; padding:15% 0; }
+#contWrap>#best_ice>ul>li>a>#num01{ background:url(../images/sign01.png)no-repeat center/100%; }
+#contWrap>#best_ice>ul>li>a>#num02{ background:url(../images/sign02.png)no-repeat center/100%; }
+#contWrap>#best_ice>ul>li>a>#num03{ background:url(../images/sign03.png)no-repeat center/100%; }
+#contWrap>#best_ice>ul>li>a>#num04{ background:url(../images/sign04.png)no-repeat center/100%; }
+#contWrap>#best_ice>ul>li>a>#num05{ background:url(../images/sign05.png)no-repeat center/100%; }
+#contWrap>#best_ice>ul>li>a>#num06{ background:url(../images/sign06.png)no-repeat center/100%; }
+#contWrap>#best_ice>ul>li>a>#num07{ background:url(../images/sign07.png)no-repeat center/100%; }
+#contWrap>#best_ice>ul>li>a>div:nth-child(2){width:100%; padding:100% 0 0; border-radius:50%; box-shadow:0 3px 5px #ccc;}
+#contWrap>#best_ice>ul>li>a>p{font-size: 0.9rem;margin-top:10%; font-family: 'Nanum Gothic', sans-serif; color:#3a3735;}
+#contWrap>#best_ice>ul>li>a>#iceimg01{ background:#fef6eb url(../images/icecream01.png) no-repeat top/115%;}
+#contWrap>#best_ice>ul>li>a>#iceimg02{background:#fef6eb url(../images/icecream02.png) no-repeat top/115%;}
+#contWrap>#best_ice>ul>li>a>#iceimg03{background:#fef6eb url(../images/icecream03.png) no-repeat top/115%;}
+#contWrap>#best_ice>ul>li>a>#iceimg04{background:#fef6eb url(../images/icecream04.png) no-repeat top/115%;}
+#contWrap>#best_ice>ul>li>a>#iceimg05{ background:#fef6eb url(../images/icecream05.png) no-repeat top/115%;}
+#contWrap>#best_ice>ul>li>a>#iceimg06{background:#fef6eb url(../images/icecream06.png) no-repeat top/115%;}
+#contWrap>#best_ice>ul>li>a>#iceimg07{background:#fef6eb url(../images/icecream07.png) no-repeat top/115%;}
+
+/*mouse hover*/
+#ice_list>#ice_listBox>li>.circle{ position:absolute; width:140%; height:155%; transform:translateX(-50%); left:50%; top:4%; border-radius:50%; border:1px solid none; box-shadow:0 5px 10px rgba(0, 0, 0, 0.3); background:#fff2e0; z-index:999; opacity:0; }
+#ice_list>#ice_listBox>li>.circle>div{ position:absolute; top:-8%; left:50%; transform:translateX(-50%); width:75%; padding:63% 0 0; }
+#ice_list>#ice_listBox>li>.circle>aside{ width:100%; position:absolute; top:48%; left:50%; transform:translateX(-50%); }
+#ice_list>#ice_listBox>li>.circle>aside::after{content:""; clear:both; display:block;}
+#ice_list>#ice_listBox>li>.circle>aside>h2{ font-size: 1.4rem; font-family: 'Nanum Gothic', sans-serif; color:#651d32; margin-bottom:5%; }
+#ice_list>#ice_listBox>li>.circle>aside>p{ font-size: 0.9rem; font-family: 'Nanum Gothic', sans-serif; color:#3a3735; line-height:1.2rem; }
+#ice_list>#ice_listBox>li>.circle>aside>ul{ position:absolute; top:140%; left:50%; transform:translateX(-50%); width:50%; height:100%; }
+#ice_list>#ice_listBox>li>.circle>aside>ul>.o{ position:absolute; width:25%; padding:12% 0; border:1px solid none; border-radius:50%; }
+#ice_list>#ice_listBox>li>.circle>aside>ul>.o01{ left:0; background-color:#e4b9d6; }
+#ice_list>#ice_listBox>li>.circle>aside>ul>.o02{ transform:translateX(-50%); left:50%; background-color:#651d32; }
+#ice_list>#ice_listBox>li>.circle>aside>ul>.o03{ right:0; background-color:#a626ff; }
+#ice_list>#ice_listBox>li:hover>.circle{ opacity:1; }
+#ice_list>#ice_listBox>li>.circle01>div{ background: url(../images/icecream01.png) no-repeat top/70%; }
+#ice_list>#ice_listBox>li>.circle02>div{ background: url(../images/icecream02.png) no-repeat top/70%; }
+#ice_list>#ice_listBox>li>.circle03>div{ background: url(../images/icecream03.png) no-repeat top/70%; }
+#ice_list>#ice_listBox>li>.circle04>div{ background: url(../images/icecream04.png) no-repeat top/70%; }
+#ice_list>#ice_listBox>li>.circle05>div{ background: url(../images/icecream05.png) no-repeat top/70%; }
+#ice_list>#ice_listBox>li>.circle06>div{ background: url(../images/icecream06.png) no-repeat top/70%; }
+#ice_list>#ice_listBox>li>.circle07>div{ background: url(../images/icecream07.png) no-repeat top/70%; }
+#ice_list>#ice_listBox>li>.circle08>div{ background: url(../images/icecream08.png) no-repeat top/70%; }
+#ice_list>#ice_listBox>li>.circle09>div{ background: url(../images/icecream09.png) no-repeat top/70%; }
+#ice_list>#ice_listBox>li>.circle10>div{ background: url(../images/icecream10.png) no-repeat top/70%; }
+#ice_list>#ice_listBox>li>.circle11>div{ background: url(../images/icecream11.png) no-repeat top/70%; }
+#ice_list>#ice_listBox>li>.circle12>div{ background: url(../images/icecream12.png) no-repeat top/70%; }
+#ice_list>#ice_listBox>li>.circle13>div{ background: url(../images/icecream13.png) no-repeat top/70%; }
+#ice_list>#ice_listBox>li>.circle14>div{ background: url(../images/icecream14.png) no-repeat top/70%; }
+#ice_list>#ice_listBox>li>.circle15>div{ background: url(../images/icecream15.png) no-repeat top/70%; }
+#ice_list>#ice_listBox>li>.circle16>div{ background: url(../images/icecream16.png) no-repeat top/70%; }
+#ice_list>#ice_listBox>li>.circle17>div{ background: url(../images/icecream17.png) no-repeat top/70%; }
+#ice_list>#ice_listBox>li>.circle18>div{ background: url(../images/icecream18.png) no-repeat top/70%; }
+#ice_list>#ice_listBox>li>.circle19>div{ background: url(../images/icecream19.png) no-repeat top/70%; }
+#ice_list>#ice_listBox>li>.circle20>div{ background: url(../images/icecream20.png) no-repeat top/70%; }
+
+
+
+
+/*Ice cream20*/
+#ice_list{width:90%;  margin:0 auto; padding-bottom:10%;}
+#ice_list>#ice_listBox{width:100%; }
+#ice_list>#ice_listBox>li{position:relative; width:24%; padding:0 0 0; margin:0 1.33% 5% 0; background:#fff; float:left; text-align:center; /*outline:1px solid red;*/}
+#ice_list>#ice_listBox>li>p{font-size: 0.9rem;margin-top:5%; font-family: 'Nanum Gothic', sans-serif; color:#3a3735;}
+#ice_list>#ice_listBox>li:nth-child(4),
+#ice_list>#ice_listBox>li:nth-child(8),
+#ice_list>#ice_listBox>li:nth-child(12),
+#ice_list>#ice_listBox>li:nth-child(16),
+#ice_list>#ice_listBox>li:nth-child(20){ margin:0 0 5% 0;}
+#ice_list>#ice_listBox>li>div{width:100%; padding:80% 0 0; }
+#ice_list>#ice_listBox>li>#list_iceimg01{background: url(../images/icecream01.png) no-repeat center/100%;}
+#ice_list>#ice_listBox>li>#list_iceimg02{background: url(../images/icecream02.png) no-repeat center/100%;}
+#ice_list>#ice_listBox>li>#list_iceimg03{background: url(../images/icecream03.png) no-repeat center/100%;}
+#ice_list>#ice_listBox>li>#list_iceimg04{background: url(../images/icecream04.png) no-repeat center/100%;}
+#ice_list>#ice_listBox>li>#list_iceimg05{background: url(../images/icecream05.png) no-repeat center/100%;}
+#ice_list>#ice_listBox>li>#list_iceimg06{background: url(../images/icecream06.png) no-repeat center/100%;}
+#ice_list>#ice_listBox>li>#list_iceimg07{background: url(../images/icecream07.png) no-repeat center/100%;}
+#ice_list>#ice_listBox>li>#list_iceimg08{background: url(../images/icecream08.png) no-repeat center/100%;}
+#ice_list>#ice_listBox>li>#list_iceimg09{background: url(../images/icecream09.png) no-repeat center/100%;}
+#ice_list>#ice_listBox>li>#list_iceimg10{background: url(../images/icecream10.png) no-repeat center/100%;}
+#ice_list>#ice_listBox>li>#list_iceimg11{background: url(../images/icecream11.png) no-repeat center/100%;}
+#ice_list>#ice_listBox>li>#list_iceimg12{background: url(../images/icecream12.png) no-repeat center/100%;}
+#ice_list>#ice_listBox>li>#list_iceimg13{background: url(../images/icecream13.png) no-repeat center/100%;}
+#ice_list>#ice_listBox>li>#list_iceimg14{background: url(../images/icecream14.png) no-repeat center/100%;}
+#ice_list>#ice_listBox>li>#list_iceimg15{background: url(../images/icecream15.png) no-repeat center/100%;}
+#ice_list>#ice_listBox>li>#list_iceimg16{background: url(../images/icecream16.png) no-repeat center/100%;}
+#ice_list>#ice_listBox>li>#list_iceimg17{background: url(../images/icecream17.png) no-repeat center/100%;}
+#ice_list>#ice_listBox>li>#list_iceimg18{background: url(../images/icecream18.png) no-repeat center/100%;}
+#ice_list>#ice_listBox>li>#list_iceimg19{background: url(../images/icecream19.png) no-repeat center/100%;}
+#ice_list>#ice_listBox>li>#list_iceimg20{background: url(../images/icecream20.png) no-repeat center/100%;}
+
+/*NEW,BEST*/
+#ice_list>#ice_listBox>li:nth-child(1)>.sign,
+#ice_list>#ice_listBox>li:nth-child(9)>.sign,
+#ice_list>#ice_listBox>li:nth-child(17)>.sign{ position:absolute; top:-10%; left:70%; width:20%; padding:13% 0; background: url(../images/new.png) no-repeat center/100%; transform:rotate(15deg); }
+#ice_list>#ice_listBox>li:nth-child(3)>.sign,
+#ice_list>#ice_listBox>li:nth-child(15)>.sign{ position:absolute; top:1%; left:25%; width:20%; padding:6% 0; background: url(../images/best.png) no-repeat center/100%; transform:rotate(-30deg); }
+#ice_list>#ice_listBox>li:nth-child(1):hover>.sign,
+#ice_list>#ice_listBox>li:nth-child(9):hover>.sign,
+#ice_list>#ice_listBox>li:nth-child(17):hover>.sign{ background: url(../images/new.png) no-repeat center/0; }
+#ice_list>#ice_listBox>li:nth-child(3):hover>.sign,
+#ice_list>#ice_listBox>li:nth-child(15):hover>.sign{ background: url(../images/best.png) no-repeat center/0; }
+
+
+
+/*모바일 => 320이상 780이하*/
+@media screen and (min-width: 100px) and (max-width: 999px){
+/*메인 타이틀*/
+   #contWrap>#main_title{width:100%; padding:4% 0; text-align:center; font-family: 'Bree Serif', serif; font-size:4.2rem; color:#651d32; margin-bottom:7%;}
+   #contWrap>#main_title>span{font-family: 'Nanum Gothic', sans-serif; font-size:3.6rem; margin-left:0.5%;}
+   /*메인 타이틀*/
+	/*Best icecream*/
+	#contWrap>#best_ice>ul{width:100%; padding:5% 0 10%;}
+	#contWrap>#best_ice>ul>li{width:33.3333%; /*outline: 1px solid red;*/}
+	#contWrap>#best_ice>ul>li>a>#num04,
+	#contWrap>#best_ice>ul>li>a>#num05,
+	#contWrap>#best_ice>ul>li>a>#num06,
+	#contWrap>#best_ice>ul>li>a>#num07
+	{display: none;}
+	#contWrap>#best_ice>ul>li>a>#iceimg04,
+	#contWrap>#best_ice>ul>li>a>#iceimg05,
+	#contWrap>#best_ice>ul>li>a>#iceimg06,
+	#contWrap>#best_ice>ul>li>a>#iceimg07
+	{display: none;}
+	#contWrap>#best_ice>ul>li>a>p{font-size: 3.3rem;}
+	#contWrap>#best_ice>ul>li>a>.bestno{display: none;}
+
+
+
+	/*Ice cream20*/
+	#ice_list>#ice_listBox>li{width:48.6%; padding:0 0 0; margin:0 1.33% 5% 0; background:#fff; float:left; text-align:center; /*outline:1px solid red;*/}
+	#ice_list>#ice_listBox>li>p{font-size: 3rem; /*outline:1px solid red;*/}
+
+
+	/*mouse hover*/
+	#ice_list>#ice_listBox>li>.circle{ width:120%; height:130%; }
+	#ice_list>#ice_listBox>li>.circle>aside>h2{ font-size: 4.5rem; margin-bottom:7%;}
+	#ice_list>#ice_listBox>li>.circle>aside>p{ font-size: 2.7rem; margin-top:7%; line-height:20%; letter-spacing:-0.07rem;}
+	#ice_list>#ice_listBox>li>.circle>aside>ul>.o{ display: none; }
+
+
+
+
+
+}

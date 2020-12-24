@@ -1,0 +1,169 @@
+@import url(mediaQuery.css);
+/*중앙컨텐츠*/
+/*기본설정*/
+#contWrap{width:100%; height:auto;}
+#contWrap::after{content:""; clear:both; display:block;}
+/*기본설정*/
+
+/*메인 타이틀*/
+#contWrap>#main_title{width:100%; padding:5% 0; text-align:center; font-family: 'Bree Serif', serif; font-size:2.1rem; color:#651d32;}
+#contWrap>#main_title>span{font-family: 'Nanum Gothic', sans-serif; font-size:1.8rem; margin-left:0.5%;}
+/*메인 타이틀*/
+
+/**{outline:1px solid red;}*/
+
+#brand_01{width:90%; padding:5% 0; margin:0 auto; }
+#brand_01::after{content:""; display:block; clear:both;}
+#brand_01>ul{width:100%; padding:10% 0; position:relative;}
+#brand_01>ul>li{width:100%; position:absolute; top:50%; left:50%; transform: translate(-50%, -50%);}
+#brand_01>ul>#brand_img01{background:url(../images/teb01.png) no-repeat center/55%; padding:25% 0; z-index:10;}
+#brand_01>ul>#brand_img02{background:url(../images/teb07.png) no-repeat center/55%; padding:30% 0;z-index:10;}
+#brand_01>ul>#brand_img03{background:url(../images/teb02.png) no-repeat center/50%; padding:30% 0;z-index:10;}
+
+#brand_01>ul>li{display:none;}
+
+#brand_01>ul>.basic{display:block;}
+
+
+
+#brand_01>ul>#brand_line{width:75%; background:#651d32;border-radius:5rem; padding:3% 0;position:relative;margin-top:17%; display:block;}
+#brand_01>ul>#brand_line>#line{ border-top:0.19rem dashed #fff; top:30%; left:50%; transform:translateX(-50%); width:83%;  position:absolute;}
+#brand_01>ul>#brand_line>p{color:#fff; text-align:center; position: absolute;font-size:1rem; font-family: 'Bree Serif', serif;}
+#brand_01>ul>#brand_line>p>span{display:block; font-size:2.3rem; margin-top:-13%;}
+#brand_01>ul>#brand_line>#year1961{top:57%; transform:translateY(-50%); left:4%;}
+
+.animation01{animation:ani1 7s ease-in-out 0s  forwards; opacity:1;}
+
+@keyframes ani1{ 
+  from{left:4%;}
+  to{left:87%}  
+}
+
+
+/*
+=================애니메이션 호출방법=========================
+ 1. keyframes을 먼저 적용 후에 애니메이션 명령
+ 2. animation => 이시이지반방마
+    : 이름시간 이징지연시간 반복회수 방향 마지막상태유지;
+
+- animation-name: none
+  => 이름
+- animation-delay: 0s
+  => 시작시간(3s..)
+- animation-timing-function: ease
+  => 이징(ease/ease-out/ease-in-out/linear)
+- animation-duration: 0s
+  => 지연(유지)시간(6s..)
+- animation-lteration-count: 1
+  => 반복여부(1/2/infinite)
+  ==> 숫자 쓰면 회수, infinite는 계속 동작, 아무것도 안쓰면 한번
+- animation-direction: normal
+  => 방향(nomal/reverse/alternate/alternate-reverse)
+  ==> alternate : 반대방향으로 다시 돌아감(왔다갔다 이동)
+- animation-fill-mode: none
+  => 마지막 상태(none/forwards/backwards)
+  ==> forwards : 애니메이션 끝값을 마지막으로 유지  
+    */  
+
+#brand_02{width:90%; margin:0 auto; padding:5% 0;}
+#brand_02>nav{width:75%; margin:0 auto;}
+#brand_02>nav>ul{width:60%;}
+#brand_02>nav>ul>li{width:33.33%; padding:2% 0;  text-align:center; border-radius: 1rem 1rem 0 0;}
+
+#brand_02>nav>ul>li{background:rgba(0,0,0,0); cursor:pointer; color:#232224; font-size:1rem; font-weight:bold; box-shadow:0 -2px 3px #ccc; }
+
+#brand_02>nav>ul>.basic{background:#FFFCE1; }
+
+
+#brand_02>.Contents{width:75%; height:23rem; margin:0 auto;  background:#FFFCE1;padding:3% 0; box-shadow:0 2px 3px #ccc;}
+#brand_02>.Contents>p{width:85%; margin:0 auto; font-size:1.2rem; color:#232224; line-height:2.2rem; letter-spacing:-0.08rem;}
+
+#brand_02>.Contents>p .redtext{display:block;font-size:1.5rem; font-weight:bold; color:#651d32; margin:2% 0 3%;}
+#brand_02>.Contents>p .graytext{display:block;font-size:1.4rem; font-weight:bold; margin:1% 0 0;}
+#brand_02>.Contents>p .redtext_po{font-size:1.6rem; font-weight:bold; color:#651d32;}
+#brand_02>div{display:none;}
+
+#brand_02>.basic{display:block;}
+
+/*모바일 => 320이상 780이하*/
+@media screen and (min-width: 100px) and (max-width: 999px){
+
+  /*메인 타이틀*/
+  #contWrap>#main_title{width:100%; padding:5% 0; text-align:center; font-family: 'Bree Serif', serif; font-size:4.2rem; color:#651d32;}
+  #contWrap>#main_title>span{font-family: 'Nanum Gothic', sans-serif; font-size:3.6rem; margin-left:0.5%;}
+  /*메인 타이틀*/
+
+  #brand_01{width:90%; padding:5% 0; margin:0 auto; }
+  #brand_01::after{content:""; display:block; clear:both;}
+  #brand_01>ul{width:100%; padding:20% 0; position:relative; }
+  #brand_01>ul>li{width:100%; position:absolute; top:50%; left:50%; transform: translate(-50%, -50%); }
+  #brand_01>ul>#brand_img01{background:url(../images/teb01.png) no-repeat center/80%; padding:35% 0; z-index:10;}
+  #brand_01>ul>#brand_img02{background:url(../images/teb07.png) no-repeat center/80%; padding:35% 0;z-index:10;}
+  #brand_01>ul>#brand_img03{background:url(../images/teb02.png) no-repeat center/70%; padding:38% 0;z-index:10;}
+
+  #brand_01>ul>li{display:none;}
+
+  #brand_01>ul>.basic{display:block;}
+
+
+
+  #brand_01>ul>#brand_line{width:100%; background:#651d32;border-radius:5rem; padding:6% 0;position:relative;margin-top:17%; display:block;}
+  #brand_01>ul>#brand_line>#line{ border-top:0.38rem dashed #fff; top:30%; left:50%; transform:translateX(-50%); width:83%;  position:absolute;}
+  #brand_01>ul>#brand_line>p{color:#fff; text-align:center; position: absolute;font-size:2rem; font-family: 'Bree Serif', serif;}
+  #brand_01>ul>#brand_line>p>span{display:block; font-size:4.6rem; margin-top:-13%;}
+  #brand_01>ul>#brand_line>#year1961{top:57%; transform:translateY(-50%); left:4%;}
+
+  .animation01{animation:ani1 7s ease-in-out 0s  forwards; opacity:1;}
+
+  @keyframes ani1{ 
+    from{left:4%;}
+    to{left:87%}  
+  }
+
+
+  /*
+  =================애니메이션 호출방법=========================
+   1. keyframes을 먼저 적용 후에 애니메이션 명령
+   2. animation => 이시이지반방마
+      : 이름시간 이징지연시간 반복회수 방향 마지막상태유지;
+
+  - animation-name: none
+    => 이름
+  - animation-delay: 0s
+    => 시작시간(3s..)
+  - animation-timing-function: ease
+    => 이징(ease/ease-out/ease-in-out/linear)
+  - animation-duration: 0s
+    => 지연(유지)시간(6s..)
+  - animation-lteration-count: 1
+    => 반복여부(1/2/infinite)
+    ==> 숫자 쓰면 회수, infinite는 계속 동작, 아무것도 안쓰면 한번
+  - animation-direction: normal
+    => 방향(nomal/reverse/alternate/alternate-reverse)
+    ==> alternate : 반대방향으로 다시 돌아감(왔다갔다 이동)
+  - animation-fill-mode: none
+    => 마지막 상태(none/forwards/backwards)
+    ==> forwards : 애니메이션 끝값을 마지막으로 유지  
+      */  
+
+  #brand_02{width:90%; margin:0 auto; padding:5% 0; }
+  #brand_02>nav{width:100%;}
+  #brand_02>nav>ul{width:100%;}
+  #brand_02>nav>ul>li{width:33.33%; padding:4% 0;  text-align:center; border-radius: 1rem 1rem 0 0; }
+
+  #brand_02>nav>ul>li{background:rgba(0,0,0,0); cursor:pointer; color:#232224; font-size:2rem; font-weight:bold; box-shadow:0 -2px 3px #ccc;}
+
+  #brand_02>nav>ul>.basic{background:#FFFCE1; }
+
+
+  #brand_02>.Contents{width:100%; height:auto; margin:0 auto;  background:#FFFCE1;padding:3% 0; box-shadow:0 2px 3px #ccc;}
+  #brand_02>.Contents>p{width:85%; margin:0 auto; font-size:2.4rem; color:#232224; line-height:4.4rem; letter-spacing:-0.08rem;}
+
+  #brand_02>.Contents>p .redtext{display:block;font-size:3rem; font-weight:bold; color:#651d32; margin:2% 0 3%;}
+  #brand_02>.Contents>p .graytext{display:block;font-size:2.8rem; font-weight:bold; margin:1% 0 0;}
+  #brand_02>.Contents>p .redtext_po{font-size:3.2rem; font-weight:bold; color:#651d32;}
+  #brand_02>div{display:none;}
+
+  #brand_02>.basic{display:block;}
+
+}

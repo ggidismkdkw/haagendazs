@@ -1,0 +1,582 @@
+@import url(mediaQuery.css);
+
+/*중앙컨텐츠*/
+/*기본설정*/
+#contWrap{width:100%; height:auto;overflow: hidden;}
+#contWrap::after{content:""; clear:both; display:block;}
+/*기본설정*/
+
+/*메인 배너 부분*/
+#main_banner{width:100%; padding:0; position:relative; }
+#main_banner>#banner{width:300%;padding:0;}
+#main_banner>#banner>li{width:33.333%;  padding:7.2% 0; position:relative;}
+#main_banner>#banner>li>a{display:block;  width:100%; height:100%; position:absolute; top:0;left:0;}
+#main_banner>#banner>#banner_img01{background:url(../images/main03.jpg) no-repeat center/cover;}
+#main_banner>#banner>#banner_img02{background:url(../images/main2.jpg) no-repeat center/cover;}
+#main_banner>#banner>#banner_img03{background:url(../images/main1.jpg) no-repeat left/cover;}
+/*버튼부분*/
+.btn{ width:3%; padding:2% 0 ; background-color:#ccc; position: absolute; top:50%; transform: translateY(-50%); cursor:pointer; opacity:0.4;}
+.btn:hover{opacity:0.8;}
+.btn_left{ left:1%; background:url(../images/arrow02.png) no-repeat center/100%; }
+.btn_right{ right:1%;  background:url(../images/arrow01.png) no-repeat center/100%;}
+/*버튼부분*/
+/*메인 배너 부분*/
+
+
+/*이벤트 + 동영상 부분*/
+#event_video{width:90%;  height:auto; padding:5% 0 0 0; margin:0 auto;}
+#event_video::after{content:""; clear:both; display:block;}
+#event_video>#event{width:49%; padding:0;  float:left;}
+#event_video>#event>li{width:50%;padding:27% 0; position:relative;}
+
+#event_video>#event>li>a{display:block;  width:100%; height:100%; position:absolute; top:0;left:0;}
+#event_video>#event>#event_img01{background:url(../images/event01.jpg) no-repeat bottom/cover;}#event_video>#event>#event_img01:hover{background-position:top;}
+#event_video>#event>#event_img02{background:url(../images/event02.jpg) no-repeat bottom/cover;}
+#event_video>#event>#event_img02:hover{background-position:top;}
+#viedoBox{
+	position : relative;
+	width : 49%;
+	height : 0;
+	padding-bottom : 26.5%;
+	float:right;
+}
+
+.video{
+	position : absolute;
+	top : 0;
+	left : 0;
+	width : 100%;
+	height : 100%;
+}
+/*이벤트 + 동영상 부분*/
+
+
+/*하겐다즈 브랜드 소개 페이지*/
+#haagendazs_br{width:90%; padding:2% 0 6%; margin:0 auto;}
+#haagendazs_br::after{content:""; clear:both; display:block;}
+figure.snip1132 {
+ font-family: 'Nanum Gothic';
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  width: 33.333%;
+
+	float:left;
+  background: #fff;
+  color: #fff;
+  text-align: center;
+  
+}
+
+figure.snip1132 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
+}
+
+figure.snip1132 img {
+  width: 100%; padding:0;
+  position: relative; 
+  opacity: 1; 
+}
+
+figure.snip1132 figcaption {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  border: 1px solid #fff;
+  border-width: 0 1px;
+}
+
+figure.snip1132 .heading {
+  overflow: hidden;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+figure.snip1132 .caption {
+  overflow: hidden;
+  -webkit-transform: translateY(50%);
+  transform: translateY(50%);
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+figure.snip1132 h3,
+figure.snip1132 p {
+  display: table;
+  margin: 0 auto;
+  padding: 0 10px;
+  position: relative;
+  text-align: center;
+  width: auto;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: 'Nanum Gothic';
+}
+
+figure.snip1132 h3 span,
+figure.snip1132 p span {
+  font-weight: 800;
+}
+
+figure.snip1132 h3:before,
+figure.snip1132 p:before,
+figure.snip1132 h3:after,
+figure.snip1132 p:after {
+  position: absolute;
+  display: block;
+  width: 1000%;
+  height: 1px;
+  content: '';
+  background: #fff;
+}
+
+figure.snip1132 h3:before,
+figure.snip1132 p:before {
+  left: -1000%;
+}
+
+figure.snip1132 h3:after,
+figure.snip1132 p:after {
+  right: -1000%;
+}
+
+figure.snip1132 h3:before,
+figure.snip1132 h3:after {
+  top: 50%;
+}
+
+figure.snip1132 p {
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+figure.snip1132 p:before,
+figure.snip1132 p:after {
+  bottom: 50%;
+}
+
+figure.snip1132 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+figure.snip1132:hover img{
+  opacity: 0.25;
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+}
+figure.snip1132:hover h3{margin-top: 85%; font-size:1.5rem;  color:#000;}
+figure.snip1132:hover h3:before, figure.snip1132:hover h3:after,figure.snip1132:hover p:before, figure.snip1132:hover p:after, figure.snip1132:hover figcaption { background-color:rgba(255,255,255,0);  border:none;}
+
+figure.snip1132:hover p{margin-bottom: 85%; font-size:1rem; color:#000;}
+
+/*하겐다즈 브랜드 소개 페이지*/
+
+
+/*온라인 구매*/
+#online_store{width:100%; height:auto; padding:6% 0 15%; background-color:#fffaf2; box-shadow:0 0 5px #ccc;}
+
+/*온라인 구매 타이틀*/
+#online_store>#store_title{width:100%; padding:0; text-align:center; font-family: 'Bree Serif', serif; font-size:2.1rem; color:#651d32;}
+#online_store>#store_title>span{font-family: 'Nanum Gothic', sans-serif; font-size:1.8rem; margin-left:0.5%;}
+/*온라인 구매 타이틀*/
+
+/*온라인 구매 기본 설정*/
+#online_store{width:auto; /*outline:1px solid red;*/}
+#online_store>dl{position:relative; background-color:#fff; border:0.05rem solid #999; padding:0.5%; border-radius:0.5rem; opacity:0;}
+#online_store>dl:hover{background-color:#fffaf2; border:0.05rem solid #651d32;}
+#online_store>dl>.storeimg_bg{position:absolute; z-index:999;}
+/*온라인 구매 기본 설정*/
+
+
+/*온라인 구매 메인 글씨 */
+#online_store>dl>.store_mtext{  font:bold 1.3rem  'Bree Serif', serif; color:#651d32; }
+/*온라인 구매 메인 글씨 */
+
+/*온라인 구매 서브 글씨*/
+#online_store>dl>.store_stext{width:70%;  font: 0.8rem 'Nanum Gothic', sans-serif; color:#333;margin-top:1%; }
+/*온라인 구매 서브 글씨*/
+
+/*온라인 구매 more 버튼*/
+#online_store>dl>.more{width:35%; padding:3.8% 0; background:url(../images/more.png) no-repeat bottom/100%; margin-top:20%; margin-bottom:2%; cursor:pointer;}
+#online_store>dl:hover>.more{background-position: top;}
+/*온라인 구매 more 버튼*/
+
+/*온라인 구매 미니컵*/
+#online_store>#mini{width:18%; left:30%; margin-top: 6%; transition: all 0.3s;  }
+#online_store>#mini>.storeimg_bg{width:80%;padding:40% 0; right:-35%;  top:50%;transition:all 0.3s; transform:rotate(5deg); background:url(../images/mini.png) no-repeat center/100%;}
+#online_store>#mini:hover>.storeimg_bg{transform:rotate(0deg);}
+/*온라인 구매 미니컵*/
+
+/*온라인 구매 파인트*/
+#online_store>#pint{width:18%; left:55%;}
+#online_store>#pint>.storeimg_bg{width:95%;padding:55% 0; right:-60%; transition:all 0.3s; top:-25%;transform:rotate(4deg); background:url(../images/pint.png) no-repeat center/100%; }
+
+#online_store>#pint:hover>.storeimg_bg{transform:rotate(0deg);}
+/*온라인 구매 파인트*/
+
+
+
+/*온라인 구매 쿼터*/
+#online_store>#quart{width:27%; left:21%; margin-top:-1%;}
+#online_store>#quart>.storeimg_bg{width:85%;padding:55% 0; right:-35%;transition:all 0.3s;  top:20%; transform:rotate(-7deg); background:url(../images/quart.png) no-repeat center/100%;}
+#online_store>#quart:hover>.storeimg_bg{transform:rotate(0deg);}
+#online_store>#quart>.more{width:25%; padding:2.7% 0;  margin-top:20%; cursor:pointer;}
+#online_store>#quart>.store_stext{width:50%;  font: 0.8rem 'Nanum Gothic', sans-serif; color:#333;margin-top:1%; }
+/*온라인 구매 쿼터*/
+
+
+/*온라인 구매 스틱 바*/
+#online_store>#stick_bar{width:18%;  left:60%;}
+#online_store>#stick_bar>.storeimg_bg{transition:all 0.3s;width:80%;padding:50% 0; right:-20%;  top:-30%;background:url(../images/bar.png) no-repeat center/100%; transform:rotate(4deg);}
+#online_store>#stick_bar:hover>.storeimg_bg{transform:rotate(0deg);}
+/*온라인 구매 스틱 바*/
+
+
+/*온라인 구매 샌드*/
+#online_store>#crispy{width:15%; left:17%; margin-top:-3%; }
+#online_store>#crispy>.storeimg_bg{transition:all 0.3s;width:130%;padding:30% 0;  top:65%; left:-12.5%;background:url(../images/cen.png) no-repeat center/100%; transform:rotate(6deg);}
+#online_store>#crispy:hover>.storeimg_bg{transform:rotate(0deg);}
+#online_store>#crispy>.more{margin-top:6%; margin-bottom:30%; }
+#online_store>#crispy>.store_stext{width:90%;}
+/*온라인 구매 샌드*/
+
+/*온라인 구매 콘*/
+#online_store>#cone{width:18%; left:58%; }
+#online_store>#cone>.storeimg_bg{transition:all 0.3s;width:80%;padding:50% 0; right:-30%;  top:-10%;background:url(../images/cone.png) no-repeat center/100%;  transform:rotate(45deg);}
+#online_store>#cone:hover>.storeimg_bg{transform:rotate(25deg);}
+/*온라인 구매 콘*/
+
+/*온라인 구매 케이크*/
+#online_store>#cake{width:18%; left:37%;  margin-top:-8%;}
+#online_store>#cake>.storeimg_bg{transition:all 0.3s;width:70%;padding:35% 0; top:35%; right:-15%; background:url(../images/cake.png) no-repeat center/100%;}
+#online_store>#cake:hover>.storeimg_bg{transform:scale(1.1);}
+/*온라인 구매 케이크*/
+
+/*온라인 애니메이션*/
+.mini{animation:ani2 1s ease-in-out 0s  forwards; opacity:0;}
+.pint{animation:ani2 1s ease-in-out 0.5s  forwards; opacity:0;}
+.quart{animation:ani2 1s ease-in-out 1s  forwards; opacity:0;}
+.stick_bar{animation:ani2 1s ease-in-out 1.5s  forwards; opacity:0;}
+.crispy{animation:ani2 1s ease-in-out 2s  forwards; opacity:0;}
+.cone{animation:ani2 1s ease-in-out 2.5s  forwards; opacity:0;}
+.cake{animation:ani2 1s ease-in-out 3s  forwards; opacity:0;}
+@keyframes ani2{ 
+  from{opacity:0;}
+  to{opacity:1;}  
+}
+
+
+/*
+=================애니메이션 호출방법=========================
+ 1. keyframes을 먼저 적용 후에 애니메이션 명령
+ 2. animation => 이시이지반방마
+    : 이름시간 이징지연시간 반복회수 방향 마지막상태유지;
+
+- animation-name: none
+  => 이름
+- animation-delay: 0s
+  => 시작시간(3s..)
+- animation-timing-function: ease
+  => 이징(ease/ease-out/ease-in-out/linear)
+- animation-duration: 0s
+  => 지연(유지)시간(6s..)
+- animation-lteration-count: 1
+  => 반복여부(1/2/infinite)
+  ==> 숫자 쓰면 회수, infinite는 계속 동작, 아무것도 안쓰면 한번
+- animation-direction: normal
+  => 방향(nomal/reverse/alternate/alternate-reverse)
+  ==> alternate : 반대방향으로 다시 돌아감(왔다갔다 이동)
+- animation-fill-mode: none
+  => 마지막 상태(none/forwards/backwards)
+  ==> forwards : 애니메이션 끝값을 마지막으로 유지  
+    */  
+
+  /*PC => 1024이상 */
+@media screen and (min-width: 1000px){
+
+  }
+/*모바일 => 320이상 780이하*/
+@media screen and (min-width: 100px) and (max-width: 999px){
+/*필요없는 부분 */
+#viedoBox{display:none;}
+.video{display:none;}
+/*필요없는 부분 */
+
+/*메인 배너 부분*/
+#main_banner{width:100%; padding:0; position:relative; }
+#main_banner>#banner{width:300%;padding:0;}
+#main_banner>#banner>li{width:33.333%;  padding:10% 0; position:relative;}
+#main_banner>#banner>li>a{display:block;  width:100%; height:100%; position:absolute; top:0;left:0;}
+#main_banner>#banner>#banner_img01{background:url(../images/main03.jpg) no-repeat right/cover;}
+#main_banner>#banner>#banner_img02{background:url(../images/main2.jpg) no-repeat left/cover;}
+#main_banner>#banner>#banner_img03{background:url(../images/main1.jpg) no-repeat 19% 0/cover;}
+/*버튼부분*/
+.btn{ width:7%; padding:5% 0 ; background-color:#ccc; position: absolute; top:50%; transform: translateY(-50%); cursor:pointer; opacity:0.4;}
+.btn:hover{opacity:0.8;}
+.btn_left{ left:1%; background:url(../images/arrow02.png) no-repeat center/100%; }
+.btn_right{ right:1%;  background:url(../images/arrow01.png) no-repeat center/100%;}
+/*버튼부분*/
+/*메인 배너 부분*/
+
+
+
+/*이벤트*/
+#event_video{width:100%;  height:auto; padding:0 0 0 0; margin:0 auto;}
+#event_video::after{content:""; clear:both; display:block;}
+#event_video>#event{width:100%; padding:0;  float:left;}
+#event_video>#event>li{width:50%;padding:27% 0; position:relative;}
+
+#event_video>#event>li>a{display:block;  width:100%; height:100%; position:absolute; top:0;left:0;}
+#event_video>#event>#event_img01{background:url(../images/event01.jpg) no-repeat bottom/cover;}#event_video>#event>#event_img01:hover{background-position:top;}
+#event_video>#event>#event_img02{background:url(../images/event02.jpg) no-repeat bottom/cover;}
+#event_video>#event>#event_img02:hover{background-position:top;}
+/*이벤트*/
+
+/**{outline:1px solid red;}*/
+
+/*하겐다즈 브랜드 소개 페이지*/
+#haagendazs_br{width:100%; padding:0 0 0; margin:0 auto;}
+#haagendazs_br::after{content:""; clear:both; display:block;}
+figure.snip1132 {
+ font-family: 'Nanum Gothic';
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  width: 50%;
+  float:left;
+  background: #fff;
+  color: #fff;
+  text-align: center;
+  
+}
+figure.snip1132:nth-child(3){display:none;}
+
+figure.snip1132 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
+}
+
+figure.snip1132 img {
+  width: 100%; padding:0;
+  position: relative; 
+  opacity: 1; 
+}
+
+figure.snip1132 figcaption {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  border: 1px solid #fff;
+  border-width: 0 1px;
+}
+
+figure.snip1132 .heading {
+  overflow: hidden;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+figure.snip1132 .caption {
+  overflow: hidden;
+  -webkit-transform: translateY(50%);
+  transform: translateY(50%);
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+figure.snip1132 h3,
+figure.snip1132 p {
+  display: table;
+  margin: 0 auto;
+  padding: 0 10px;
+  position: relative;
+  text-align: center;
+  width: auto;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: 'Nanum Gothic';
+  font-size:3rem;
+}
+
+figure.snip1132 h3 span,
+figure.snip1132 p span {
+  font-weight: 800;
+}
+
+figure.snip1132 h3:before,
+figure.snip1132 p:before,
+figure.snip1132 h3:after,
+figure.snip1132 p:after {
+  position: absolute;
+  display: block;
+  width: 1000%;
+  height: 1px;
+  content: '';
+  background: #fff;
+}
+
+figure.snip1132 h3:before,
+figure.snip1132 p:before {
+  left: -1000%;
+}
+
+figure.snip1132 h3:after,
+figure.snip1132 p:after {
+  right: -1000%;
+}
+
+figure.snip1132 h3:before,
+figure.snip1132 h3:after {
+  top: 50%;
+}
+
+figure.snip1132 p {
+  font-size: 1.8em;
+  font-weight: 500;
+}
+
+figure.snip1132 p:before,
+figure.snip1132 p:after {
+  bottom: 50%;
+}
+
+figure.snip1132 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+figure.snip1132:hover img{
+  opacity: 0.25;
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+}
+figure.snip1132:hover h3{margin-top:80%; font-size:3.1rem;  color:#000;}
+figure.snip1132:hover h3:before, figure.snip1132:hover h3:after,figure.snip1132:hover p:before, figure.snip1132:hover p:after, figure.snip1132:hover figcaption { background-color:rgba(255,255,255,0);  border:none;}
+
+figure.snip1132:hover p{margin-bottom:80%; font-size:1.8rem; color:#000;}
+
+/*하겐다즈 브랜드 소개 페이지*/
+
+
+/*온라인 구매*/
+#online_store{width:100%; height:auto; padding:0 0 0; background-color:#fffaf2; box-shadow:0 0 5px #ccc;}
+#online_store::after{content: ""; clear:both; display:block;}
+/*온라인 구매 타이틀*/
+#online_store>#store_title{width:100%; padding:5% 0; text-align:center; font-family: 'Bree Serif', serif; font-size:5rem; color:#651d32;}
+#online_store>#store_title>span{font-family: 'Nanum Gothic', sans-serif; font-size:4rem; margin-left:1.5%;}
+/*온라인 구매 타이틀*/
+/**{outline:1px solid red;}*/
+/*온라인 구매 기본 설정*/
+#online_store>dl{position:static; background-color:#fff; width:50%; border:0.05rem solid #999; padding:0; border-radius:0.5rem; opacity:1; float:left;margin:1% 0;}
+#online_store>dl:hover{background-color:#fffaf2; border:0.05rem solid #651d32;}
+#online_store>dl>a{width:100%; height:100%;  display:block; position:static;}
+#online_store>dl>.storeimg_bg{position:static; z-index:999;  float:right; margin-right:5%; /*outline:1px solid red;*/}
+#online_store>dl>.storeimg_bg>a{width: 100%;padding:0; display:block; position:static; }
+/*온라인 구매 기본 설정*/
+
+
+/*온라인 구매 메인 글씨 */
+#online_store>dl>.store_mtext{  font:bold 5rem  'Bree Serif', serif; color:#651d32; text-indent:1rem;}
+/*온라인 구매 메인 글씨 */
+
+/*온라인 구매 서브 글씨*/
+#online_store>dl>.store_stext{width:70%;  font: 2.3rem 'Nanum Gothic', sans-serif; color:#333;margin-top:1%; margin-left:1rem; }
+/*온라인 구매 서브 글씨*/
+
+/*온라인 구매 more 버튼*/
+#online_store>dl>.more{width:35%; padding:3.8% 0; background:url(../images/more.png) no-repeat bottom/100%; margin-top:20%; margin-bottom:2%; cursor:pointer;  margin-left:1rem; float: left;}
+#online_store>dl:hover>.more{background-position: top;}
+/*온라인 구매 more 버튼*/
+
+/*온라인 구매 미니컵*/
+#online_store>#mini{width:49%; left:0; margin-top:1%; transition: all 0.3s;  }
+#online_store>#mini>.storeimg_bg{width:30%;padding:20% 0;  transition:all 0.3s; transform:rotate(0deg); background:url(../images/mini.png) no-repeat center/100%;}
+#online_store>#mini:hover>.storeimg_bg{transform:rotate(0deg);}
+/*온라인 구매 미니컵*/
+
+/*온라인 구매 파인트*/
+#online_store>#pint{width:49%; margin-left:2%; margin-top:1%;}
+#online_store>#pint>.storeimg_bg{width:30%;padding:20% 0;  transition:all 0.3s; transform:rotate(0deg); background:url(../images/pint.png) no-repeat center/100%; }
+
+#online_store>#pint:hover>.storeimg_bg{transform:rotate(0deg);}
+/*온라인 구매 파인트*/
+
+
+
+/*온라인 구매 쿼터*/
+#online_store>#quart{width:100%; margin-top:1%;}
+#online_store>#quart>.storeimg_bg{width:30%;padding:20% 0;  transform:rotate(0deg); background:url(../images/quart.png) no-repeat center/100%; margin-top:-10%; margin-right:5%;}
+#online_store>#quart:hover>.storeimg_bg{transform:rotate(0deg);}
+#online_store>#quart>.more{width:25%; padding:2.7% 0;  margin-top:20%; cursor:pointer;}
+#online_store>#quart>.store_stext{width:50%;  font: 3rem 'Nanum Gothic', sans-serif; color:#333;margin-top:1%; }
+/*온라인 구매 쿼터*/
+
+
+/*온라인 구매 스틱 바*/
+#online_store>#stick_bar{width:49%; margin-top:1%;  }
+#online_store>#stick_bar>.storeimg_bg{transition:all 0.3s;width:40%;padding:20% 0; background:url(../images/bar.png) no-repeat bottom/80%; transform:rotate(0deg); }
+#online_store>#stick_bar:hover>.storeimg_bg{transform:rotate(0deg);}
+/*온라인 구매 스틱 바*/
+
+
+/*온라인 구매 샌드*/
+#online_store>#crispy{width:49%; margin-top:1%;margin-left:2%; }
+#online_store>#crispy>.storeimg_bg{transition:all 0.3s;width:45%;padding:20% 0; background:url(../images/cen.png) no-repeat center/100%; transform:rotate(0deg);}
+#online_store>#crispy:hover>.storeimg_bg{transform:rotate(0deg);}
+#online_store>#crispy>.more{ margin-top:20%; margin-bottom:2%;  }
+#online_store>#crispy>.store_stext{width:90%;}
+/*온라인 구매 샌드*/
+
+/*온라인 구매 콘*/
+#online_store>#cone{width:49%;  margin-top:1%;}
+#online_store>#cone>.storeimg_bg{transition:all 0.3s;width:35%;padding:20% 0; background:url(../images/cone.png) no-repeat center/90%;  transform:rotate(0deg);}
+#online_store>#cone:hover>.storeimg_bg{transform:rotate(0deg);}
+/*온라인 구매 콘*/
+
+/*온라인 구매 케이크*/
+#online_store>#cake{width:49%; margin-top:1%; margin-left:2%;}
+#online_store>#cake>.storeimg_bg{transition:all 0.3s;width:35%;padding:20% 0; background:url(../images/cake.png) no-repeat center/100%;}
+#online_store>#cake:hover>.storeimg_bg{transform:scale(1);}
+/*온라인 구매 케이크*/
+
+
+
+/**{outline:1px solid red;}*/
+
+
+/*온라인 애니메이션*/
+.mini{animation:none; opacity:1;}
+.pint{animation:none; opacity:1;}
+.quart{animation:none; opacity:1;}
+.stick_bar{animation:none; opacity:1;}
+.crispy{animation:none; opacity:1;}
+.cone{animation:none; opacity:1;}
+.cake{animation:none; opacity:1;}
+@keyframes ani2{ 
+  from{opacity:1;}
+  to{opacity:1;}  
+}
+
+
+
+}
